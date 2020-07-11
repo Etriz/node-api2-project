@@ -7,7 +7,7 @@ server.use(express.json());
 server.use("/api/posts", apiRouter);
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "it's working" });
+  res.status(200).json({ message: "it's working", name: "api2 project" });
 });
 
 module.exports = server;
